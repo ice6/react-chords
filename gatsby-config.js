@@ -6,7 +6,6 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-postcss",
       options: {

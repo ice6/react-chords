@@ -8,21 +8,39 @@ dependencies:
   '@gatsbyjs/reach-router':
     specifier: ^2.0.1
     version: 2.0.1(react-dom@18.2.0)(react@18.2.0)
+  '@gatsbyjs/webpack-hot-middleware':
+    specifier: ^2.25.3
+    version: 2.25.3
   '@tombatossals/chords-db':
     specifier: ^0.5.1
     version: 0.5.1
   '@tombatossals/react-chords':
     specifier: ^0.2.10
     version: 0.2.10
+  anser:
+    specifier: ^2.1.1
+    version: 2.1.1
+  autoprefixer:
+    specifier: ^10.4.16
+    version: 10.4.16(postcss@8.4.32)
   convert-svg-to-png:
     specifier: ^0.6.4
     version: 0.6.4
+  css.escape:
+    specifier: ^1.5.1
+    version: 1.5.1
   deepmerge:
     specifier: ^4.3.1
     version: 4.3.1
+  error-stack-parser:
+    specifier: ^2.1.4
+    version: 2.1.4
   gatsby:
     specifier: ^5.13.0
-    version: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+    version: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
+  gatsby-core-utils:
+    specifier: ^4.13.0
+    version: 4.13.0
   gatsby-link:
     specifier: ^5.13.0
     version: 5.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
@@ -41,9 +59,6 @@ dependencies:
   gatsby-plugin-purgecss:
     specifier: ^6.2.1
     version: 6.2.1(gatsby@5.13.0)
-  gatsby-plugin-react-helmet:
-    specifier: ^6.13.0
-    version: 6.13.0(gatsby@5.13.0)(react-helmet@6.1.0)
   gatsby-plugin-sharp:
     specifier: ^5.13.0
     version: 5.13.0(gatsby@5.13.0)(graphql@16.8.1)
@@ -62,24 +77,42 @@ dependencies:
   gatsby-transformer-sharp:
     specifier: ^5.13.0
     version: 5.13.0(gatsby-plugin-sharp@5.13.0)(gatsby@5.13.0)(graphql@16.8.1)
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
+  lodash.merge:
+    specifier: ^4.6.2
+    version: 4.6.2
   mitt:
     specifier: ^3.0.1
     version: 3.0.1
+  node-html-parser:
+    specifier: ^6.1.11
+    version: 6.1.11
+  platform:
+    specifier: ^1.3.6
+    version: 1.3.6
+  postcss:
+    specifier: ^8.4.32
+    version: 8.4.32
   prop-types:
     specifier: ^15.7.2
     version: 15.8.1
+  query-string:
+    specifier: ^8.1.0
+    version: 8.1.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
-  react-helmet:
-    specifier: ^6.1.0
-    version: 6.1.0(react@18.2.0)
   shallow-compare:
     specifier: ^1.2.2
     version: 1.2.2
+  style-to-object:
+    specifier: ^1.0.5
+    version: 1.0.5
   tailwindcss:
     specifier: ^3.4.0
     version: 3.4.0
@@ -103,6 +136,9 @@ devDependencies:
   prettier:
     specifier: ^3.1.1
     version: 3.1.1
+  webpack-hot-middleware:
+    specifier: ^2.25.4
+    version: 2.25.4
 
 packages:
 
@@ -2556,7 +2592,7 @@ packages:
     dev: false
     optional: true
 
-  /@pmmmwh/react-refresh-webpack-plugin@0.5.11(react-refresh@0.14.0)(webpack@5.89.0):
+  /@pmmmwh/react-refresh-webpack-plugin@0.5.11(react-refresh@0.14.0)(webpack-hot-middleware@2.25.4)(webpack@5.89.0):
     resolution: {integrity: sha512-7j/6vdTym0+qZ6u4XbSAxrWBGYSdCfTzySkj7WAFgDLmSyWlOrWvpyzxlFh5jtw9dn0oL/jtW+06XfFiisN3JQ==}
     engines: {node: '>= 10.13'}
     peerDependencies:
@@ -2593,6 +2629,7 @@ packages:
       schema-utils: 3.3.0
       source-map: 0.7.4
       webpack: 5.89.0
+      webpack-hot-middleware: 2.25.4
     dev: false
 
   /@pnpm/config.env-replace@1.1.0:
@@ -3276,7 +3313,6 @@ packages:
     resolution: {integrity: sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==}
     engines: {'0': node >= 0.8.0}
     hasBin: true
-    dev: false
 
   /ansi-regex@2.1.1:
     resolution: {integrity: sha512-TIGnTpdo+E3+pCyAluZvtED5p5wCqLdezCyhPZzKPcxvFplEt4i+W7OONCKgeZFT3+y5NZZfOOS/Bdcanm1MYA==}
@@ -3291,7 +3327,6 @@ packages:
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
-    dev: false
 
   /ansi-regex@6.0.1:
     resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
@@ -3666,7 +3701,7 @@ packages:
       '@babel/core': 7.23.6
       '@babel/runtime': 7.23.6
       '@babel/types': 7.23.6
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
     dev: false
 
@@ -4757,6 +4792,11 @@ packages:
   /decode-uri-component@0.2.2:
     resolution: {integrity: sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==}
     engines: {node: '>=0.10'}
+    dev: false
+
+  /decode-uri-component@0.4.1:
+    resolution: {integrity: sha512-+8VxcR21HhTy8nOt6jf20w0c9CADrw1O8d+VZ/YzzCt4bJ3uBjw+D1q2osAB8RnpwwaeYBxy0HyKQxD5JBMuuQ==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /decompress-response@6.0.0:
@@ -5881,6 +5921,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /filter-obj@5.1.0:
+    resolution: {integrity: sha512-qWeTREPoT7I0bifpPUXtxkZJ1XJzxWtfoWWkdVGqa+eCr3SHW/Ocp89o8vLvbUuQnadybJpjOKu4V+RwO6sGng==}
+    engines: {node: '>=14.16'}
+    dev: false
+
   /finalhandler@1.2.0:
     resolution: {integrity: sha512-5uXcUVftlQMFnWC9qu/svkWv3GTd2PfUhK/3PLkYNAe7FbqJMt3515HaxE6eRL74GdsriiwujiawdaB1BpEISg==}
     engines: {node: '>= 0.8'}
@@ -6271,7 +6316,7 @@ packages:
       chokidar: 3.5.3
       common-tags: 1.8.2
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       gatsby-plugin-sharp: 5.13.0(gatsby@5.13.0)(graphql@16.8.1)
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.0)(graphql@16.8.1)
@@ -6292,7 +6337,7 @@ packages:
       gatsby: ^5.0.0-next
     dependencies:
       '@babel/runtime': 7.23.6
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.0)(graphql@16.8.1)
       semver: 7.5.4
@@ -6311,7 +6356,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.6
       cheerio: 1.0.0-rc.12
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       glob: 7.2.3
       idb-keyval: 3.2.0
@@ -6333,7 +6378,7 @@ packages:
       chokidar: 3.5.3
       fs-exists-cached: 1.0.0
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       gatsby-page-utils: 3.13.0
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.0)(graphql@16.8.1)
@@ -6354,7 +6399,7 @@ packages:
       postcss: ^8.0.5
     dependencies:
       '@babel/runtime': 7.23.6
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       postcss: 8.4.32
       postcss-loader: 7.3.3(postcss@8.4.32)(typescript@5.3.3)(webpack@5.89.0)
     transitivePeerDependencies:
@@ -6368,22 +6413,10 @@ packages:
       gatsby: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
     dependencies:
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       loader-utils: 3.2.1
       merge-anything: 5.1.7
       purgecss: 4.1.3
-    dev: false
-
-  /gatsby-plugin-react-helmet@6.13.0(gatsby@5.13.0)(react-helmet@6.1.0):
-    resolution: {integrity: sha512-CNfCL1T5oICy2zfLAjxaQvXshtvj9/M76xbAMJaVwfV7HRmfy346NUemvNMKBJALUk4ncyQ0fJL63GNoj4ZFGw==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      gatsby: ^5.0.0-next
-      react-helmet: ^5.1.3 || ^6.0.0
-    dependencies:
-      '@babel/runtime': 7.23.6
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-      react-helmet: 6.1.0(react@18.2.0)
     dev: false
 
   /gatsby-plugin-sharp@5.13.0(gatsby@5.13.0)(graphql@16.8.1):
@@ -6398,7 +6431,7 @@ packages:
       debug: 4.3.4
       filenamify: 4.3.0
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.0)(graphql@16.8.1)
       lodash: 4.17.21
@@ -6423,7 +6456,7 @@ packages:
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.6)
       '@babel/runtime': 7.23.6
       babel-plugin-remove-graphql-queries: 5.13.0(@babel/core@7.23.6)(gatsby@5.13.0)
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -6438,7 +6471,7 @@ packages:
       '@babel/runtime': 7.23.6
       fastq: 1.16.0
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       gatsby-sharp: 1.13.0
       graphql: 16.8.1
@@ -6500,7 +6533,7 @@ packages:
       chokidar: 3.5.3
       file-type: 16.5.4
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-core-utils: 4.13.0
       mime: 3.0.0
       pretty-bytes: 5.6.0
@@ -6540,7 +6573,7 @@ packages:
       bluebird: 3.7.2
       common-tags: 1.8.2
       fs-extra: 11.2.0
-      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+      gatsby: 5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4)
       gatsby-plugin-sharp: 5.13.0(gatsby@5.13.0)(graphql@16.8.1)
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.0)(graphql@16.8.1)
       probe-image-size: 7.2.3
@@ -6563,7 +6596,7 @@ packages:
       - supports-color
     dev: false
 
-  /gatsby@5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3):
+  /gatsby@5.13.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack-hot-middleware@2.25.4):
     resolution: {integrity: sha512-Y4f+UInQ5CK5ODOrxuAn5zp7IRsXoCbMXgj9LyMJdl84/PJgeslPl1YTuUNZcPzL9j/CDfkAw6L+S5MXNnCHhw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -6594,7 +6627,7 @@ packages:
       '@nodelib/fs.walk': 1.2.8
       '@parcel/cache': 2.8.3(@parcel/core@2.8.3)
       '@parcel/core': 2.8.3
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.11(react-refresh@0.14.0)(webpack@5.89.0)
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.11(react-refresh@0.14.0)(webpack-hot-middleware@2.25.4)(webpack@5.89.0)
       '@types/http-proxy': 1.17.14
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@7.32.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 5.62.0(eslint@7.32.0)(typescript@5.3.3)
@@ -7132,7 +7165,6 @@ packages:
 
   /html-entities@2.4.0:
     resolution: {integrity: sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ==}
-    dev: false
 
   /htmlparser2@6.1.0:
     resolution: {integrity: sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==}
@@ -7274,6 +7306,10 @@ packages:
 
   /inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
+    dev: false
+
+  /inline-style-parser@0.2.2:
+    resolution: {integrity: sha512-EcKzdTHVe8wFVOGEYXiW9WmJXPjqi1T+234YpJr98RiFYKHV3cdy1+3mkTE+KHTHxFFLH51SfaGOoUdW+v7ViQ==}
     dev: false
 
   /inquirer@7.3.3:
@@ -8453,6 +8489,13 @@ packages:
       he: 1.2.0
     dev: false
 
+  /node-html-parser@6.1.11:
+    resolution: {integrity: sha512-FAgwwZ6h0DSDWxfD0Iq1tsDcBCxdJB1nXpLPPxX8YyVWzbfCjKWEzaynF4gZZ/8hziUmp7ZSaKylcn0iKhufUQ==}
+    dependencies:
+      css-select: 5.1.0
+      he: 1.2.0
+    dev: false
+
   /node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
     dev: false
@@ -9573,6 +9616,15 @@ packages:
       strict-uri-encode: 2.0.0
     dev: false
 
+  /query-string@8.1.0:
+    resolution: {integrity: sha512-BFQeWxJOZxZGix7y+SByG3F36dA0AbTy9o6pSmKFcFz7DAj0re9Frkty3saBn3nHo3D0oZJ/+rx3r8H8r8Jbpw==}
+    engines: {node: '>=14.16'}
+    dependencies:
+      decode-uri-component: 0.4.1
+      filter-obj: 5.1.0
+      split-on-first: 3.0.0
+    dev: false
+
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: false
@@ -9706,22 +9758,6 @@ packages:
     resolution: {integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==}
     dev: false
 
-  /react-fast-compare@3.2.2:
-    resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
-    dev: false
-
-  /react-helmet@6.1.0(react@18.2.0):
-    resolution: {integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==}
-    peerDependencies:
-      react: '>=16.3.0'
-    dependencies:
-      object-assign: 4.1.1
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-fast-compare: 3.2.2
-      react-side-effect: 2.1.2(react@18.2.0)
-    dev: false
-
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -9743,14 +9779,6 @@ packages:
       neo-async: 2.6.2
       react: 18.2.0
       webpack: 5.89.0
-    dev: false
-
-  /react-side-effect@2.1.2(react@18.2.0):
-    resolution: {integrity: sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==}
-    peerDependencies:
-      react: ^16.3.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /react@16.14.0:
@@ -10437,6 +10465,11 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
+  /split-on-first@3.0.0:
+    resolution: {integrity: sha512-qxQJTx2ryR0Dw0ITYyekNQWpz6f8dGd7vffGNflQQ3Iqj9NJ6qiZ7ELpZsJ/QBhIVAiDfXdag3+Gp8RvWa62AA==}
+    engines: {node: '>=12'}
+    dev: false
+
   /sponge-case@1.0.1:
     resolution: {integrity: sha512-dblb9Et4DAtiZ5YSUZHLl4XhH4uK80GhAZrVXdN4O2P4gQ40Wa5UIOPUHlA/nFd2PLblBZWUioLMMAVrgpoYcA==}
     dependencies:
@@ -10599,7 +10632,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       ansi-regex: 5.0.1
-    dev: false
 
   /strip-ansi@7.1.0:
     resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
@@ -10670,6 +10702,12 @@ packages:
     resolution: {integrity: sha512-HYNoHZa2GorYNyqiCaBgsxvcJIn7OHq6inEga+E6Ke3m5JkoqpQbnFssk4jwe+K7AhGa2fcha4wSOf1Kn01dMg==}
     dependencies:
       inline-style-parser: 0.1.1
+    dev: false
+
+  /style-to-object@1.0.5:
+    resolution: {integrity: sha512-rDRwHtoDD3UMMrmZ6BzOW0naTjMsVZLIjsGleSKS/0Oz+cgCfAPRspaqJuE8rDzpKha/nEvnM0IF4seEAZUTKQ==}
+    dependencies:
+      inline-style-parser: 0.2.2
     dev: false
 
   /stylehacks@5.1.1(postcss@8.4.32):
@@ -11290,6 +11328,13 @@ packages:
       schema-utils: 3.3.0
       webpack: 5.89.0
     dev: false
+
+  /webpack-hot-middleware@2.25.4:
+    resolution: {integrity: sha512-IRmTspuHM06aZh98OhBJtqLpeWFM8FXJS5UYpKYxCJzyFoyWj1w6VGFfomZU7OPA55dMLrQK0pRT1eQ3PACr4w==}
+    dependencies:
+      ansi-html-community: 0.0.8
+      html-entities: 2.4.0
+      strip-ansi: 6.0.1
 
   /webpack-merge@5.10.0:
     resolution: {integrity: sha512-+4zXKdx7UnO+1jaN4l2lHVD+mFvnlZQP/6ljaJVb4SZiwIKeUnrT5l0gkT8z+n4hKpC+jpOv6O9R+gLtag7pSA==}

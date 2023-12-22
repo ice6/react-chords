@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Img from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticQuery, graphql } from "gatsby"
 
 const Header = ({ siteTitle, instrument }) => (
@@ -10,9 +10,7 @@ const Header = ({ siteTitle, instrument }) => (
       query {
         file(relativePath: { eq: "github-logo.png" }) {
           childImageSharp {
-            fixed(width: 100, height: 41) {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(layout: FIXED, width: 100, height: 41)
           }
         }
       }
@@ -60,9 +58,9 @@ const Header = ({ siteTitle, instrument }) => (
           </ul>
           <div className="max-w-sm mx-auto flex p-1 pb-0  hover:bg-gray-100 rounded-lg border shadow-xs">
             <a href="http://github.com/tombatossals/react-chords">
-              <Img
+              <GatsbyImage
                 style={{ margin: 0 }}
-                fixed={data.file.childImageSharp.fixed}
+                image={data.file.childImageSharp.gatsbyImageData}
               />{" "}
             </a>{" "}
           </div>{" "}
