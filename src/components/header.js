@@ -59,7 +59,7 @@ const Header = ({ siteTitle, instrument }) => (
           <div className="max-w-sm mx-auto flex p-1 pb-0  hover:bg-gray-100 rounded-lg border shadow-xs">
             <a href="http://github.com/tombatossals/react-chords">
               <GatsbyImage
-                style={{ margin: 0 }}
+                style={{ margin: 0, display: "none" }}
                 image={data.file.childImageSharp.gatsbyImageData}
               />{" "}
             </a>{" "}
